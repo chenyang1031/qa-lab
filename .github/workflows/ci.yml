@@ -1,0 +1,55 @@
+name: CI 质量门禁
+
+on: [push]
+
+jobs:
+  api-test:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8
+        env:
+          MYSQL_ROOT_PASSWORD: root123
+          MYSQL_DATABASE: demo_shop
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -proot123"
+          --health-interval=5s
+          --health-timeout=3s
+          --health-retries=20
+      redis:
+        image: redis:7
+        ports:
+          - 6379:6379
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: |
+          pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: 后台启动被测服务
+        run: |
+          nohup uvicorn app.main:app --host 127.0.0.1 --port 8001 > server.log 2>&1 &
+
+      - name: 等服务就绪(最多 30 秒)
+        run: |
+          python -c "
+          import time, requests
+          for i in range(30):
+              try:
+                  if requests.get('http://127.0.0.1:8001/').status_code == 200:
+                      break
+              except Exception:
+                  pass
+              time.sleep(1)
+          else:
+              raise SystemExit('服务 30 秒内未就绪')
+          "
+
+      - name: 跑接口自动化测试
+        run: pytest -v
