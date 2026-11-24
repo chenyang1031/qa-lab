@@ -5,6 +5,9 @@ on: [push]
 jobs:
   api-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: demo-shop
     services:
       mysql:
         image: mysql:8
