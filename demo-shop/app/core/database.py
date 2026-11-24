@@ -9,7 +9,8 @@ from app.core.config import settings
 # pymysql 是 Python 连 MySQL 的驱动;utf8mb4 支持中文和 emoji
 engine = create_engine(
     f"mysql+pymysql://{settings.DB_USER}:{settings.DB_PASSWORD}"
-    f"@{settings.DB_HOST}:{settings.DB_PORT}/{settings.DB_NAME}?charset=utf8mb4"
+    f"@{settings.DB_HOST}:{settings.DB_PORT}/{settings.DB_NAME}?charset=utf8mb4",
+    pool_pre_ping=True,
 )
 
 SessionLocal = sessionmaker(bind=engine, autoflush=False)
