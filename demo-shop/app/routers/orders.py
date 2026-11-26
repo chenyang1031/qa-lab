@@ -1,6 +1,6 @@
-"""订单接口层:下单与查单。真正的业务在 services/order_service.py 里。"""
+"""订单接口层:新增 X-Idempotency-Key 请求头透传。"""
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, Header, HTTPException
 from sqlalchemy.orm import Session
 
 from app.core.auth import get_current_user
@@ -15,10 +15,11 @@ router = APIRouter(prefix="/orders", tags=["订单"])
 @router.post("", response_model=OrderOut)
 def create_order_api(
     data: OrderIn,
-    username: str = Depends(get_current_user),        # 不带有效 token 就到不了这里(401)
+    username: str = Depends(get_current_user),
     db: Session = Depends(get_db),
+    idempotency_key: str | None = Header(default=None, alias="X-Idempotency-Key"),
 ):
-    return create_order(db, username, data.product_id, data.quantity)
+    return create_order(db, username, data.product_id, data.quantity, idempotency_key)
 
 
 @router.get("/{order_no}")

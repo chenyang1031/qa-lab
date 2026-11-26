@@ -1,5 +1,4 @@
-"""模型层(ORM):定义三张表。ORM = 用 Python 对象操作数据库,不用手写 SQL。
-User ↔ users 表,Product ↔ products 表,Order ↔ orders 表。"""
+"""模型层:Order 新增 idempotency_key(唯一索引,允许多个 NULL)。"""
 
 from datetime import datetime
 
@@ -21,7 +20,7 @@ class Product(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(100), nullable=False)
-    price = Column(Integer, nullable=False)     # 单位:分。用整数避免 0.1+0.2 浮点误差
+    price = Column(Integer, nullable=False)     # 单位:分
     stock = Column(Integer, nullable=False, default=0)
 
 
@@ -34,3 +33,4 @@ class Order(Base):
     product_id = Column(Integer, nullable=False)
     quantity = Column(Integer, nullable=False)
     created_at = Column(DateTime, default=datetime.now)
+    idempotency_key = Column(String(80), unique=True, nullable=True)

@@ -1,5 +1,4 @@
-"""入参/出参模型层(Pydantic):声明每个接口收什么、返什么,自动做参数校验。
-比如 quantity 定义了 gt=0,传 0 或负数会直接被 FastAPI 挡下返回 422,根本到不了业务层。"""
+"""入参/出参模型:OrderOut 增加 idempotent_replay 字段(标记幂等重放)。"""
 
 from pydantic import BaseModel, Field
 
@@ -30,3 +29,4 @@ class OrderOut(BaseModel):
     product_id: int
     quantity: int
     remaining_stock: int
+    idempotent_replay: bool = False

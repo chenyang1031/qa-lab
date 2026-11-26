@@ -1,13 +1,16 @@
 """公共夹具:pytest 自动发现 conftest.py 中的 fixture。
-base_url = 被测服务地址
-auth_headers = 会话级登录凭证(session 级:整套测试只登录一次,所有需要登录的用例共用)
+BASE_URL 支持环境变量覆盖:
+  默认      → http://127.0.0.1:8001(compose 环境)
+  K8s 环境  → BASE_URL=http://127.0.0.1:8002 pytest -v
+同一套测试,验证不同部署环境——这就是测试与实现解耦。
 """
+import os
 import time
 
 import pytest
 import requests
 
-BASE_URL = "http://127.0.0.1:8001"
+BASE_URL = os.getenv("BASE_URL", "http://127.0.0.1:8001")
 
 
 @pytest.fixture(scope="session")
