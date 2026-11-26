@@ -1,0 +1,209 @@
+2026-11-26 16:14:21,156 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-11-26 16:14:21,249 INFO o.a.j.JMeter: Loading user properties from: /home/chenyang/tools/apache-jmeter-5.6.3/bin/user.properties
+2026-11-26 16:14:21,250 INFO o.a.j.JMeter: Loading system properties from: /home/chenyang/tools/apache-jmeter-5.6.3/bin/system.properties
+2026-11-26 16:14:21,252 INFO o.a.j.JMeter: Setting JMeter property: jmeter.save.saveservice.output_format=csv
+2026-11-26 16:14:21,253 INFO o.a.j.JMeter: Setting JMeter property: jmeter.save.saveservice.print_field_names=true
+2026-11-26 16:14:21,276 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-11-26 16:14:21,276 INFO o.a.j.JMeter: Version 5.6.3
+2026-11-26 16:14:21,277 INFO o.a.j.JMeter: java.version=17.0.21.1
+2026-11-26 16:14:21,277 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-11-26 16:14:21,277 INFO o.a.j.JMeter: os.name=Linux
+2026-11-26 16:14:21,278 INFO o.a.j.JMeter: os.arch=amd64
+2026-11-26 16:14:21,278 INFO o.a.j.JMeter: os.version=6.18.58.1-microsoft-standard-WSL2
+2026-11-26 16:14:21,278 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-11-26 16:14:21,279 INFO o.a.j.JMeter: java.awt.headless=true
+2026-11-26 16:14:21,279 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-11-26 16:14:21,279 INFO o.a.j.JMeter: Available Processors =8
+2026-11-26 16:14:21,322 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-11-26 16:14:21,323 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-11-26 16:14:21,323 INFO o.a.j.JMeter: JMeterHome=/home/chenyang/tools/apache-jmeter-5.6.3
+2026-11-26 16:14:21,323 INFO o.a.j.JMeter: user.dir  =/home/chenyang/qa-lab/sandbox/load
+2026-11-26 16:14:21,324 INFO o.a.j.JMeter: PWD       =/home/chenyang/qa-lab/sandbox/load
+2026-11-26 16:14:21,325 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: DESKTOP-K3S50S4 FullName: DESKTOP-K3S50S4.localdomain
+2026-11-26 16:14:21,391 INFO o.a.j.s.FileServer: Default base='/home/chenyang/qa-lab/sandbox/load'
+2026-11-26 16:14:21,396 INFO o.a.j.s.FileServer: Set new base='/home/chenyang/qa-lab/sandbox'
+2026-11-26 16:14:23,926 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-11-26 16:14:24,244 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-11-26 16:14:24,268 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-11-26 16:14:24,304 INFO o.a.j.s.SaveService: Loading file: /home/chenyang/qa-lab/sandbox/products_load.jmx
+2026-11-26 16:14:24,598 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-26 16:14:24,599 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-26 16:14:24,599 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-26 16:14:24,599 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-26 16:14:24,599 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-11-26 16:14:24,600 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-11-26 16:14:24,735 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-11-26 16:14:24,959 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-11-26 16:14:24,963 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-26 16:14:24,964 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-26 16:14:25,000 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-11-26 16:14:25,000 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-11-26 16:14:25,489 INFO o.a.j.JMeter: Running test (1795680865488)
+2026-11-26 16:14:25,693 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 50线程压商品列表
+2026-11-26 16:14:25,694 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group 50线程压商品列表.
+2026-11-26 16:14:25,694 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-11-26 16:14:25,695 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=10 delayedStart=false
+2026-11-26 16:14:25,734 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-1
+2026-11-26 16:14:25,904 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-K3S50S4
+2026-11-26 16:14:25,920 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-2
+2026-11-26 16:14:25,931 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-11-26 16:14:25,932 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-11-26 16:14:25,957 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-11-26 16:14:25,966 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-11-26 16:14:25,966 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-11-26 16:14:25,967 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-11-26 16:14:25,967 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-11-26 16:14:26,110 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-3
+2026-11-26 16:14:26,319 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-4
+2026-11-26 16:14:26,515 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-5
+2026-11-26 16:14:26,715 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-6
+2026-11-26 16:14:26,914 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-7
+2026-11-26 16:14:27,107 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-8
+2026-11-26 16:14:27,301 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-9
+2026-11-26 16:14:27,514 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-10
+2026-11-26 16:14:27,718 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-11
+2026-11-26 16:14:27,919 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-12
+2026-11-26 16:14:28,109 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-13
+2026-11-26 16:14:28,310 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-14
+2026-11-26 16:14:28,508 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-15
+2026-11-26 16:14:28,705 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-16
+2026-11-26 16:14:28,919 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-17
+2026-11-26 16:14:29,117 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-18
+2026-11-26 16:14:29,307 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-19
+2026-11-26 16:14:29,519 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-20
+2026-11-26 16:14:29,711 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-21
+2026-11-26 16:14:29,903 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-22
+2026-11-26 16:14:30,009 INFO o.a.j.r.Summariser: summary +    164 in 00:00:05 =   36.3/s Avg:   268 Min:    63 Max:  1151 Err:     0 (0.00%) Active: 22 Started: 22 Finished: 0
+2026-11-26 16:14:30,106 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-23
+2026-11-26 16:14:30,935 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-24
+2026-11-26 16:14:31,128 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-25
+2026-11-26 16:14:31,325 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-26
+2026-11-26 16:14:31,477 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-29
+2026-11-26 16:14:31,480 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-28
+2026-11-26 16:14:31,480 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-27
+2026-11-26 16:14:31,504 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-30
+2026-11-26 16:14:31,701 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-31
+2026-11-26 16:14:31,912 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-32
+2026-11-26 16:14:32,105 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-33
+2026-11-26 16:14:32,306 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-34
+2026-11-26 16:14:32,506 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-35
+2026-11-26 16:14:32,708 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-36
+2026-11-26 16:14:32,906 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-37
+2026-11-26 16:14:33,106 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-38
+2026-11-26 16:14:33,303 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-39
+2026-11-26 16:14:33,503 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-40
+2026-11-26 16:14:33,704 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-41
+2026-11-26 16:14:33,905 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-42
+2026-11-26 16:14:34,104 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-43
+2026-11-26 16:14:34,307 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-44
+2026-11-26 16:14:34,506 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-45
+2026-11-26 16:14:34,704 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-46
+2026-11-26 16:14:34,908 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-47
+2026-11-26 16:14:35,109 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-48
+2026-11-26 16:14:35,312 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-49
+2026-11-26 16:14:35,507 INFO o.a.j.t.JMeterThread: Thread started: 50线程压商品列表 1-50
+2026-11-26 16:15:00,037 INFO o.a.j.r.Summariser: summary +   2731 in 00:00:30 =   90.9/s Avg:   509 Min:   175 Max:  1338 Err:     0 (0.00%) Active: 50 Started: 50 Finished: 0
+2026-11-26 16:15:00,038 INFO o.a.j.r.Summariser: summary =   2895 in 00:00:35 =   83.8/s Avg:   496 Min:    63 Max:  1338 Err:     0 (0.00%)
+2026-11-26 16:15:25,732 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-1
+2026-11-26 16:15:25,733 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-1
+2026-11-26 16:15:25,745 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-3
+2026-11-26 16:15:25,745 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-3
+2026-11-26 16:15:25,749 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-7
+2026-11-26 16:15:25,749 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-7
+2026-11-26 16:15:25,751 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-10
+2026-11-26 16:15:25,752 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-10
+2026-11-26 16:15:25,765 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-9
+2026-11-26 16:15:25,766 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-9
+2026-11-26 16:15:25,769 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-5
+2026-11-26 16:15:25,769 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-5
+2026-11-26 16:15:25,790 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-6
+2026-11-26 16:15:25,790 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-6
+2026-11-26 16:15:25,858 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-15
+2026-11-26 16:15:25,858 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-15
+2026-11-26 16:15:25,872 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-2
+2026-11-26 16:15:25,872 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-2
+2026-11-26 16:15:25,914 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-40
+2026-11-26 16:15:25,915 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-40
+2026-11-26 16:15:25,919 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-26
+2026-11-26 16:15:25,919 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-26
+2026-11-26 16:15:25,920 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-41
+2026-11-26 16:15:25,920 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-41
+2026-11-26 16:15:25,922 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-18
+2026-11-26 16:15:25,922 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-18
+2026-11-26 16:15:25,924 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-30
+2026-11-26 16:15:25,924 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-30
+2026-11-26 16:15:26,007 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-37
+2026-11-26 16:15:26,007 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-37
+2026-11-26 16:15:26,013 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-38
+2026-11-26 16:15:26,014 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-38
+2026-11-26 16:15:26,020 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-4
+2026-11-26 16:15:26,021 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-4
+2026-11-26 16:15:26,021 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-28
+2026-11-26 16:15:26,021 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-28
+2026-11-26 16:15:26,023 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-24
+2026-11-26 16:15:26,024 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-24
+2026-11-26 16:15:26,025 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-29
+2026-11-26 16:15:26,025 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-29
+2026-11-26 16:15:26,026 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-13
+2026-11-26 16:15:26,026 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-13
+2026-11-26 16:15:26,027 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-36
+2026-11-26 16:15:26,027 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-20
+2026-11-26 16:15:26,027 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-36
+2026-11-26 16:15:26,027 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-20
+2026-11-26 16:15:26,028 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-23
+2026-11-26 16:15:26,028 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-23
+2026-11-26 16:15:26,030 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-34
+2026-11-26 16:15:26,030 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-34
+2026-11-26 16:15:26,030 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-14
+2026-11-26 16:15:26,032 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-22
+2026-11-26 16:15:26,032 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-22
+2026-11-26 16:15:26,032 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-46
+2026-11-26 16:15:26,028 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-16
+2026-11-26 16:15:26,033 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-16
+2026-11-26 16:15:26,031 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-14
+2026-11-26 16:15:26,033 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-46
+2026-11-26 16:15:26,037 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-32
+2026-11-26 16:15:26,037 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-32
+2026-11-26 16:15:26,038 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-19
+2026-11-26 16:15:26,039 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-19
+2026-11-26 16:15:26,041 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-43
+2026-11-26 16:15:26,041 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-27
+2026-11-26 16:15:26,042 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-43
+2026-11-26 16:15:26,042 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-27
+2026-11-26 16:15:26,042 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-31
+2026-11-26 16:15:26,042 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-31
+2026-11-26 16:15:26,047 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-39
+2026-11-26 16:15:26,047 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-39
+2026-11-26 16:15:26,050 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-33
+2026-11-26 16:15:26,051 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-33
+2026-11-26 16:15:26,054 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-47
+2026-11-26 16:15:26,054 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-47
+2026-11-26 16:15:26,055 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-12
+2026-11-26 16:15:26,056 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-12
+2026-11-26 16:15:26,058 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-11
+2026-11-26 16:15:26,058 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-11
+2026-11-26 16:15:26,058 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-44
+2026-11-26 16:15:26,059 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-44
+2026-11-26 16:15:26,060 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-42
+2026-11-26 16:15:26,064 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-42
+2026-11-26 16:15:26,065 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-21
+2026-11-26 16:15:26,066 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-21
+2026-11-26 16:15:26,066 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-50
+2026-11-26 16:15:26,066 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-50
+2026-11-26 16:15:26,067 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-48
+2026-11-26 16:15:26,068 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-17
+2026-11-26 16:15:26,068 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-17
+2026-11-26 16:15:26,068 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-48
+2026-11-26 16:15:26,069 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-45
+2026-11-26 16:15:26,070 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-45
+2026-11-26 16:15:26,075 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-8
+2026-11-26 16:15:26,075 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-8
+2026-11-26 16:15:26,075 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-25
+2026-11-26 16:15:26,076 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-25
+2026-11-26 16:15:26,076 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-49
+2026-11-26 16:15:26,076 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-49
+2026-11-26 16:15:26,076 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50线程压商品列表 1-35
+2026-11-26 16:15:26,077 INFO o.a.j.t.JMeterThread: Thread finished: 50线程压商品列表 1-35
+2026-11-26 16:15:26,078 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-11-26 16:15:26,079 INFO o.a.j.r.Summariser: summary +   3382 in 00:00:26 =  129.9/s Avg:   359 Min:   187 Max:   725 Err:     0 (0.00%) Active: 0 Started: 50 Finished: 50
+2026-11-26 16:15:26,080 INFO o.a.j.r.Summariser: summary =   6277 in 00:01:01 =  103.6/s Avg:   422 Min:    63 Max:  1338 Err:     0 (0.00%)
